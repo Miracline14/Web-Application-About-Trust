@@ -1,0 +1,30 @@
+
+<div class="container  mt-5 mb-5">
+ <div class="row">
+    <a routerLink="../../content" class="btn btn-sm btn-dark mb-3 "> Back </a>
+<mat-card class="col-lg-6">
+
+
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{cards.title}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{cards.image}}">
+
+    <mat-card-content class="mt-4">
+        
+        {{cards.Description}} <br> 
+
+
+    </mat-card-content>
+
+</mat-card>
+
+<div  class="col-lg-6">
+    <h4>{{cards.about}}</h4>
+
+  <h2>Intrested people register here  <button mat-raised-button (click)="register()">Register</button> </h2>
+</div >
+   
+</div>
+</div>

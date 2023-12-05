@@ -1,0 +1,49 @@
+
+<form class="form" [formGroup]="registerForm" (ngSubmit)="submit()">
+    
+        <button class="closeButton" mat-raised-button aria-label="close dialog" mat-dialog-close>
+        <mat-icon>close</mat-icon>
+        </button>
+        
+    <mat-form-field appearance="legacy">
+        <mat-label>Name </mat-label>
+        <input  matInput formControlName="name">
+        <mat-error *ngIf="registerForm.get('name')?.hasError('required')"> *name is required  </mat-error>
+    </mat-form-field>
+    
+    <mat-form-field appearance="legacy">
+        <mat-label>Last Name</mat-label>
+        <input  matInput formControlName="lastName">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>Mobile Number</mat-label>
+        <input matInput  [(ngModel)]="mobileNumber"
+        (input)="onInput($event)"
+        maxlength="10" formControlName="phoneNumber"  pattern="[0-9]*" >
+        <mat-error *ngIf="registerForm.get('phoneNumber')?.hasError('maxLength')">Number Must be in 10</mat-error>
+        <mat-error *ngIf="registerForm.get('phoneNumber')?.hasError('pattern')">Check Your Number</mat-error>
+    </mat-form-field>
+   
+    <mat-form-field appearance="legacy">
+        <mat-label>Email</mat-label>
+        <input  matInput formControlName="email">
+        <mat-error *ngIf="registerForm.get('email')?.hasError('email')">Check Your Email Address</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>Address</mat-label>
+        <input matInput formControlName="address">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>Intrested Service</mat-label>
+        <mat-select formControlName="intrested">
+            <mat-option value="childrenHome" >Children's Home</mat-option>
+            <mat-option value="oldageHome">Oldage Home</mat-option>
+            <mat-option value="environmentalCleanliness" >Environmental Cleanliness</mat-option>
+            <mat-option value="domesticHome" >Domestic Home</mat-option>
+            <mat-option value="Psychiatrist" >Psychiatrist</mat-option>
+            <mat-option value="Education" >Education</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <button [disabled]="!registerForm.valid" class="submitButton" mat-raised-button (click)="openSNackBar()" >submit</button>
+</form>

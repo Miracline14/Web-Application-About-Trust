@@ -1,0 +1,43 @@
+<div class="formcard">
+    <form [formGroup]="formData" (ngSubmit)="submit()">
+      <mat-card class="example-card">
+          <mat-card-header >
+          <h1 class="header">Create New Account</h1>
+          </mat-card-header>
+          
+          
+               <mat-form-field appearance="legacy">
+                <mat-label>User Name</mat-label>
+                <input type="text" matInput formControlName="userName"  required >
+                <mat-error *ngIf="formData.get('userName')?.hasError('required')"> *name is required  </mat-error>
+               </mat-form-field>
+
+               <mat-form-field appearance="legacy">
+                <mat-label> Email </mat-label>
+                <input type="email" matInput formControlName="email"  required>
+                <mat-error *ngIf="formData.get('email')?.hasError('email')">Give Valid Email id</mat-error>
+               </mat-form-field>
+
+               <mat-form-field appearance="legacy">
+                <mat-label>Phone Number</mat-label>
+                <input type="text" matInput formControlName="phoneNumber" [(ngModel)]="mobileNumber"
+                (input)="onInput($event)"
+                maxlength="10" required>
+                <mat-error *ngIf="formData.get('phoneNumber')?.hasError('pattern')">Check Your Number</mat-error>
+               </mat-form-field>
+  
+  
+  
+               <mat-form-field appearance="legacy">
+                <mat-label> Create New Password </mat-label>
+                <input type="password" matInput formControlName="password" required>
+               </mat-form-field>
+         
+        
+          <mat-card-actions class="buttonAction">
+            <button [disabled]="!formData.valid"  mat-raised-button class="button" (click)="openSnackBar()"  > Submit </button>
+          </mat-card-actions>
+          <h5>Already Have an acount?  <a routerLink="/login" >Login</a> </h5>
+        </mat-card>
+          </form>
+  </div>

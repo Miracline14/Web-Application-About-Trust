@@ -1,0 +1,26 @@
+<div>
+    <h1>Feel Free to Light up the World Through Happiness</h1>
+         
+    <button routerLink="/donation" mat-raised-button  >Donation 💰</button>
+  
+    <div class="row row-cols-1 mt-4  row row-cols-md-3 " >
+        <div class="col-mb-4" *ngFor="let card of cards|async">
+    
+            <mat-card class="card">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>{{card.title}}</mat-card-title>
+                </mat-card-header>
+                 <a routerLink="/description/{{card.id}}"><img mat-card-image src="{{card.image}}"  ></a>
+                
+                <mat-card-content>
+                 
+                   <b> Motto </b>: {{card.Description}}
+                
+                </mat-card-content>
+        
+            </mat-card>
+        </div>
+    </div>
+
+</div>

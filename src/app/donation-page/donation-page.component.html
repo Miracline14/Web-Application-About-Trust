@@ -1,0 +1,280 @@
+
+
+<mat-stepper linear #stepper >
+    <mat-step >
+        <form [formGroup]="donationForm" >
+            <h1>Donor Information</h1>
+            <mat-form-field appearance="outline">
+               
+                <mat-label>First Name </mat-label>
+                <input matInput type="text" formControlName="firstName">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name </mat-label>
+                <input matInput type="text" formControlName="lastName">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Date of Birth </mat-label>
+                <input matInput type="text" formControlName="dateOfBirth" [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Phone Number </mat-label>
+                <input matInput type="text" formControlName="phoneNumber">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Email Address </mat-label>
+                <input matInput type="text" formControlName="email">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label> Address </mat-label>
+                <input matInput type="text" formControlName="address">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Country </mat-label>
+                <mat-select formControlName="country" name="country">
+                    <mat-option *ngFor="let country of countries" [value]="country">
+                        {{country.name}}
+
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>State </mat-label>
+               <mat-select formControlName="state" name="state">
+                <mat-option  *ngFor="let state of states" [value]="state">
+                    {{state.name}}
+                </mat-option>
+               </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>District </mat-label>
+                <input matInput type="text" formControlName="district">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>pin Code </mat-label>
+                <input matInput type="text" formControlName="pinCode">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Donation Amount </mat-label>
+                <input matInput type="text" formControlName="donationAmount">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Message </mat-label>
+                <input matInput type="text" formControlName="message">
+            </mat-form-field>
+            <div>
+                <button [disabled]="!donationForm.valid" mat-raised-button style="background-color: black;color: aliceblue;" (click)="submit()">Save</button>
+                <!-- <button  mat-raised-button style="background-color: black;color: aliceblue;" (click)="update()">Update</button> -->
+                <button  mat-raised-button style="background-color: black;color: aliceblue;margin-left: 80%;" matStepperNext>Next</button>
+            </div>
+        </form>
+    </mat-step>
+
+    <mat-step>
+
+      <h1> Conformation Details</h1>
+      <mat-card>
+        <table mat-table [dataSource]="dataSource">
+         
+
+          <ng-container matColumnDef="firstName">
+              <th mat-header-cell *matHeaderCellDef> First Name </th>
+              <td mat-cell *matCellDef="let transaction">{{transaction.firstName}}  </td>
+             
+            </ng-container>
+          
+            
+            <ng-container matColumnDef="lastName">
+              <th mat-header-cell *matHeaderCellDef> Last Name </th>
+              <td mat-cell *matCellDef="let transaction">{{transaction.lastName}} </td>
+              
+            </ng-container>
+
+            <ng-container matColumnDef="dateOfBirth">
+              <th mat-header-cell *matHeaderCellDef> Date Of Birth </th>
+              <td mat-cell *matCellDef="let transaction">{{transaction.dateOfBirth}} </td>
+             
+            </ng-container>
+
+            <ng-container matColumnDef="phoneNumber">
+              <th mat-header-cell *matHeaderCellDef> Phone Number </th>
+              <td mat-cell *matCellDef="let transaction">{{transaction.phoneNumber}} </td>
+              
+            </ng-container>
+
+            <ng-container matColumnDef="email">
+              <th mat-header-cell *matHeaderCellDef> Email </th>
+              <td mat-cell *matCellDef="let transaction">{{transaction.email}} </td>
+              
+            </ng-container>
+
+            <ng-container matColumnDef="address">
+              <th mat-header-cell *matHeaderCellDef> Address </th>
+              <td mat-cell *matCellDef="let transaction">{{transaction.email}} </td>
+             
+            </ng-container>
+
+            <ng-container matColumnDef="country">
+              <th mat-header-cell *matHeaderCellDef> Country </th>
+              <td mat-cell *matCellDef="let transaction">{{transaction.country}} </td>
+             
+            </ng-container>
+
+            <ng-container matColumnDef="state">
+              <th mat-header-cell *matHeaderCellDef> State </th>
+              <td mat-cell *matCellDef="let transaction"> </td>
+             
+            </ng-container>
+
+            <ng-container matColumnDef="district">
+              <th mat-header-cell *matHeaderCellDef> District </th>
+              <td mat-cell *matCellDef="let transaction">{{transaction.district}} </td>
+            
+            </ng-container>
+
+            <ng-container matColumnDef="pinCode">
+              <th mat-header-cell *matHeaderCellDef> Pin code </th>
+              <td mat-cell *matCellDef="let transaction">{{transaction.pinCode}} </td>
+             
+            </ng-container>
+
+            <ng-container matColumnDef="donationAmount">
+              <th mat-header-cell *matHeaderCellDef> Donation Number </th>
+              <td mat-cell *matCellDef="let transaction">{{transaction.donationAmount}} </td>
+              
+            </ng-container>
+
+            <ng-container matColumnDef="message">
+              <th mat-header-cell *matHeaderCellDef> Message </th>
+              <td mat-cell *matCellDef="let transaction">{{transaction.message}} </td>
+             
+            </ng-container>
+
+            <!-- <ng-container matColumnDef="icon">
+              <th mat-header-cell *matHeaderCellDef> icon </th>
+              <td mat-cell *matCellDef="let transaction">{{transaction.message}} 
+                <button  mat-raised-button style="background-color: black;color: aliceblue;" (click)="editRow(transaction)"> <mat-icon>edit</mat-icon> </button>
+            </td>
+            </ng-container> -->
+          
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+           
+
+          
+         
+      </table>
+      </mat-card>
+      <div>
+        
+        <button mat-raised-button style="background-color: black;color: aliceblue;margin-left: 80%;margin-top: 4px;" matStepperNext>Next</button>
+      </div>
+       
+    </mat-step>
+
+    <mat-step>
+      <!-- <h1>Payment Method</h1> -->
+      <div class="col"> 
+        <h1 class="title">Payment Method</h1> 
+
+<form [formGroup]="paymentForm">        
+
+        <div class="inputBox"> 
+            <label for="name"> 
+                  Card Accepted: 
+              </label> 
+            <img src="https://th.bing.com/th?id=OIP._P9ffnMB5KNG7ql82jDDxQHaBJ&w=380&h=59&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" 
+                 alt="credit/debit card image"> 
+        </div> 
+
+        <div class="inputBox"> 
+          
+
+             <label for="phoneNumber"> 
+                phone Number: 
+            </label> 
+            <input  id="phoneNumber" 
+                   placeholder="Enter your Number" formControlName="phoneNumber" 
+                   required  [(ngModel)]="phoneNumber"
+                   (input)="onInput($event)"
+                   maxlength="10">   
+            <mat-error *ngIf="paymentForm.get('phoneNumber')?.hasError('pattern')">Check Your Number</mat-error>       
+
+          
+         
+          
+      </div> 
+
+        <div class="inputBox"> 
+            <label for="cardName"> 
+                  Name On Card: 
+              </label> 
+            <input type="text" id="cardName" 
+                   placeholder="Enter card name" formControlName="cardName"
+                   required> 
+        </div> 
+
+        <div class="inputBox"> 
+            <label for="cardNum"> 
+                  Credit Card Number: 
+              </label> 
+            <input type="text" id="cardNum" 
+                   placeholder="1111-2222-3333-4444" 
+                   maxlength="19" formControlName="cardNumber" required> 
+        </div> 
+
+        <div class="inputBox"> 
+            <label for="">Exp Month:</label> 
+            <select name="" id="" formControlName="experyMonth"> 
+                <option value="">Choose month</option> 
+                <option value="January">January</option> 
+                <option value="February">February</option> 
+                <option value="March">March</option> 
+                <option value="April">April</option> 
+                <option value="May">May</option> 
+                <option value="June">June</option> 
+                <option value="July">July</option> 
+                <option value="August">August</option> 
+                <option value="September">September</option> 
+                <option value="October">October</option> 
+                <option value="November">November</option> 
+                <option value="December">December</option> 
+            </select> 
+        </div> 
+
+
+        <div class="flex"> 
+            <div class="inputBox"> 
+                <label for="">Exp Year:</label> 
+                <select name="" id="" formControlName="experyYear"> 
+                    <option value="">Choose Year</option> 
+                    <option value="2023">2023</option> 
+                    <option value="2024">2024</option> 
+                    <option value="2025">2025</option> 
+                    <option value="2026">2026</option> 
+                    <option value="2027">2027</option> 
+                </select> 
+            </div> 
+
+            <div class="inputBox"> 
+                <label for="cvv">CVV</label> 
+                <input type="number" id="cvv" 
+                       placeholder="1234" formControlName="cvv" required> 
+            </div> 
+           
+        </div> 
+      </form>
+    </div> 
+    
+
+      <div>
+        <button [disabled]="!paymentForm.valid" mat-raised-button style="background-color: green;color: aliceblue;margin-left: 50%;" matStepperNext (click)="generateOtp()">Proceed to pay</button>
+      </div>
+      
+
+  </mat-step>
+ 
+</mat-stepper>

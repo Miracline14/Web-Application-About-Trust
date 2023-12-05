@@ -1,0 +1,40 @@
+<div class="banner">    
+    <button class="closeButton" mat-raised-button aria-label="close dialog" mat-dialog-close>
+        <mat-icon>close</mat-icon>
+        </button>
+
+    <h2>Thank You For Visiting Our Page</h2>
+
+   <h3> <span>Contact Details :</span></h3>
+
+   <p>If You have any Query Contact to our team Member </p>
+
+ <mat-icon> call </mat-icon> <span>Mobile : </span>+91 9087654321 <br>
+ <mat-icon>mail</mat-icon> <span>Email : </span> loveandtrust@gmail.com
+
+ <div>
+    <form [formGroup]="coustomerform" (ngSubmit)="submit()">
+<h2>  Drop Your Message Here  </h2>
+        <mat-form-field>
+            <mat-label> Name </mat-label>
+                <input matInput type="text" formControlName="name" required>
+            
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Phone Number</mat-label>
+                <input matInput type="number" formControlName="number" required>
+            
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Message</mat-label>
+               <textarea matInput formControlName="feedback" required ></textarea>
+            
+        </mat-form-field>
+        <button mat-raised-button [disabled]="!coustomerform.valid">Send Message</button>
+    </form>
+
+ </div>
+
+
+</div>
+

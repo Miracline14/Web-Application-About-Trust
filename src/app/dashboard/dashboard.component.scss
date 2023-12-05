@@ -1,0 +1,39 @@
+.banner{
+    height: 650px;
+    background-position: center top;
+    background-size: cover;
+    background-image: url('https://img1.etsystatic.com/027/0/8044273/il_fullxfull.646896205_3zcb.jpg');
+}
+.content h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    font-style: italic;
+    font-family: serif;
+  
+  }
+  
+  .content {
+  
+    top: 50%;
+    left: 30%;
+    position: absolute;
+  
+  }
+  
+  .content a {
+    text-decoration: none;
+    background-color: white;
+    color: blueviolet;
+    margin: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+  
+  }
+  
+  .content a:hover {
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+  }

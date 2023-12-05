@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg ">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand" >Trust and Love</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <mat-button-toggle-group appearance="legacy" class="navbar-nav ms-auto">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" routerLink="" routerLinkActive="active-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="about" routerLinkActive="active-link">About</a>
+                    </li>
+
+
+                    <!-- <li class="nav-item">
+              <a class="nav-link" routerLink="" (click)="createAccount()">Create Account</a>
+            </li> -->
+
+                </ul>
+            </mat-button-toggle-group>
+        </div>
+    </div>
+</nav>
+<div>
+    <router-outlet></router-outlet>
+
+</div>

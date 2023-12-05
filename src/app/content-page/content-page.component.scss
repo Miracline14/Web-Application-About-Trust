@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+    text-shadow: 5px;
+    font-size: bold;
+    font-style: italic;
+    font-family: serif;
+}
+
+.card{
+    cursor: pointer;
+    transition: transform 400ms;
+  }
+  .card:hover{
+    transform: scale(0.9);
+  }
+  
+//   .example-header-image {
+//     background-image: url('https://th.bing.com/th/id/OIP.v4NQJ6ITn1zDR2zOhqKTZQHaE8?w=292&h=195&c=7&r=0&o=5&dpr=1.5&pid=1.7');
+//     background-size: cover;
+//   }
+  
+  .row {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .card img {
+    height: 250px;
+    width: 250px;
+    margin-left: 18%;
+    justify-content: center;
+    
+  }

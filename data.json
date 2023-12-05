@@ -1,0 +1,293 @@
+{
+  "userDetails": [
+    {
+      "id": 1,
+      "userName": "miracline",
+      "email": "abc@gmail.com",
+      "phoneNumber": "9876543210",
+      "password": "4321"
+    }
+  ],
+  "trustIdeas": [
+    {
+      "id": 1,
+      "image": "https://th.bing.com/th/id/OIP.2v6gnuEjca_HKTSvRkIcHgE1DJ?w=276&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+      "Description": "Adopt a child and give new Life to Them",
+      "title": "Home for Childrens",
+      "about": "There is a lot of childrens who all are homeless, They become homeless in many ways like childrens are kidnaped and ask them to beg, lost their parents like extra... if you people intrested just adopt one and give new life or can do help like giving foods,cloths etc."
+    },
+    {
+      "id": 2,
+      "image": "https://th.bing.com/th/id/OIP.onIHd7upYr1iRZoojT-CJQHaEK?w=313&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+      "Description": "Adopt a old peoples thay need us",
+      "title": "Oldage Home",
+      "about": "Old peoples are like a guardians but now a days many old peoples are in homeless due to family issues, Maximum peoples when they grow older eventually they left their parents, They also need a home may be its their last days/months,year live in this world but for that people can't leave them... if you people intrested just adopt one and give new life or can do help like giving foods,cloths etc. and count your blessings from them."
+    },
+    {
+      "id": 3,
+      "image": "https://th.bing.com/th/id/OIP.jJeAmVhwDLBXybF6W8--cwHaEe?w=279&h=180&c=7&r=0&o=5&pid=1.7",
+      "Description": "Grow More Trees,It helps to reduce Global Warming",
+      "title": "Environment Cleanliness",
+      "about": "Save this world from toxic pollution, see wastage and extra, Our motto is to go in to camp in weekends and vacation to plant tress, remove degradable and non bio degragable wastes and make the environment greenery."
+    },
+    {
+      "id": 4,
+      "image": "https://th.bing.com/th/id/OIP.0mwFPVbEa4GxfwQsLRVCegHaEK?w=328&h=184&c=7&r=0&o=5&pid=1.7",
+      "Description": "pet a needy animals it's free of cost",
+      "title": "Domestic Home",
+      "about": "Domestic animales which are homeless, living in hungerness and needy, Just adopt them are feed foods and give shelter they are also a living beigns Just love them and Don't Hate."
+    },
+    {
+      "id": 5,
+      "image": "https://www.verywellhealth.com/thmb/7RelVIPdetjwF03ievS1MmaUfgA=/5120x3413/filters:no_upscale():max_bytes(150000):strip_icc()/doctor-and-patient-reviewing-medical-record-in-clinic-lobby-595348731-574de16c3df78ccee132b4af.jpg",
+      "Description": "Mental Health is more Important than work status",
+      "title": "Psychiatrist",
+      "about": "Nowadays people are too stressed in work, They even show their stress by angerness to their loved once. And actual life is we  Used to  worke hard for having food but nowadays people forgot to eat and they work, Our Motto is free open talk session with best Psychiatrist and we helps to lead a stress free life by counseling."
+    },
+    {
+      "id": 6,
+      "image": "https://th.bing.com/th?id=OIP.HNYbzXFHBU4Da_kZjtxn5gHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2",
+      "Description": "Education is one thing no one can take away from You",
+      "title": "Education",
+      "about": "Education is one of the most important things in people life, Nowadays many people drop their school or college due to poverty, Our motto is to give free education to all kids in both online and offline mode."
+    }
+  ],
+  "registerUser": [
+    {
+      "id": 1,
+      "name": "miracline",
+      "lastName": "A",
+      "email": "abc@gmail.com",
+      "phoneNumber": "8907654321",
+      "intrested": "environmental cleanliness",
+      "address": "xyz"
+    },
+    {
+      "name": "vishnu",
+      "lastName": "varthanan",
+      "phoneNumber": "638079000",
+      "email": "vishnu@gmail.com",
+      "address": "madurai",
+      "intrested": "childrenHome",
+      "id": 2
+    },
+    {
+      "name": "miracline",
+      "lastName": "",
+      "phoneNumber": "78912354737",
+      "email": "@gmail.com",
+      "address": "ahdg",
+      "intrested": "Psychiatrist",
+      "id": 3
+    },
+    {
+      "name": "mirac",
+      "lastName": "",
+      "phoneNumber": "9790068900",
+      "email": "fbc@gmail",
+      "address": "xyzc",
+      "intrested": "environmentalCleanliness",
+      "id": 4
+    },
+    {
+      "name": "abc",
+      "lastName": "",
+      "phoneNumber": "3457789000",
+      "email": "abc@gmail",
+      "address": "vv",
+      "intrested": "Psychiatrist",
+      "id": 5
+    }
+  ],
+  "userComments": [
+    {
+      "id": 1,
+      "name": "miracline",
+      "number": "9087654232",
+      "feedback": "xyz"
+    },
+    {
+      "name": "mirac",
+      "number": "67890",
+      "feedback": "xyz",
+      "id": 2
+    }
+  ],
+  "donationDetails": [
+    {
+      "id": 1,
+      "firstName": "",
+      "lastName": "",
+      "dateOfBirth": "",
+      "phoneNumber": "",
+      "email": "",
+      "address": "",
+      "country": "",
+      "state": "",
+      "district": "",
+      "pinCode": "",
+      "donationAmount": "",
+      "message": ""
+    },
+    {
+      "firstName": "miracline",
+      "lastName": "a",
+      "dateOfBirth": "14/04/2000",
+      "phoneNumber": "9025154990",
+      "email": "abc@gmail.com",
+      "address": "xuc",
+      "country": {
+        "name": "Aland Islands",
+        "isoCode": "AX",
+        "flag": "🇦🇽",
+        "phonecode": "+358-18",
+        "currency": "EUR",
+        "latitude": "60.11666700",
+        "longitude": "19.90000000",
+        "timezones": [
+          {
+            "zoneName": "Europe/Mariehamn",
+            "gmtOffset": 7200,
+            "gmtOffsetName": "UTC+02:00",
+            "abbreviation": "EET",
+            "tzName": "Eastern European Time"
+          }
+        ]
+      },
+      "state": null,
+      "district": "tuty",
+      "pinCode": "628617",
+      "donationAmount": "100",
+      "message": "xyz.kdhe",
+      "id": 2
+    },
+    {
+      "firstName": "miracline",
+      "lastName": "a",
+      "dateOfBirth": "2000-04-13T18:30:00.000Z",
+      "phoneNumber": "9025154990",
+      "email": "MIracline@gmail.com",
+      "address": "xyz",
+      "country": {
+        "name": "Algeria",
+        "isoCode": "DZ",
+        "flag": "🇩🇿",
+        "phonecode": "213",
+        "currency": "DZD",
+        "latitude": "28.00000000",
+        "longitude": "3.00000000",
+        "timezones": [
+          {
+            "zoneName": "Africa/Algiers",
+            "gmtOffset": 3600,
+            "gmtOffsetName": "UTC+01:00",
+            "abbreviation": "CET",
+            "tzName": "Central European Time"
+          }
+        ]
+      },
+      "state": null,
+      "district": "xyzbb",
+      "pinCode": "628617",
+      "donationAmount": "100",
+      "message": "thanks giving application",
+      "id": 3
+    },
+    {
+      "firstName": "hh",
+      "lastName": "bb",
+      "dateOfBirth": "2023-11-19T18:30:00.000Z",
+      "phoneNumber": "nn",
+      "email": "nn",
+      "address": "mm",
+      "country": {
+        "name": "Afghanistan",
+        "isoCode": "AF",
+        "flag": "🇦🇫",
+        "phonecode": "93",
+        "currency": "AFN",
+        "latitude": "33.00000000",
+        "longitude": "65.00000000",
+        "timezones": [
+          {
+            "zoneName": "Asia/Kabul",
+            "gmtOffset": 16200,
+            "gmtOffsetName": "UTC+04:30",
+            "abbreviation": "AFT",
+            "tzName": "Afghanistan Time"
+          }
+        ]
+      },
+      "state": null,
+      "district": "mm",
+      "pinCode": "jj",
+      "donationAmount": "nn",
+      "message": "nn",
+      "id": 4
+    },
+    {
+      "firstName": "mirac;",
+      "lastName": "a",
+      "dateOfBirth": "2023-11-08T18:30:00.000Z",
+      "phoneNumber": "09726365",
+      "email": "dbv",
+      "address": "",
+      "country": {
+        "name": "Albania",
+        "isoCode": "AL",
+        "flag": "🇦🇱",
+        "phonecode": "355",
+        "currency": "ALL",
+        "latitude": "41.00000000",
+        "longitude": "20.00000000",
+        "timezones": [
+          {
+            "zoneName": "Europe/Tirane",
+            "gmtOffset": 3600,
+            "gmtOffsetName": "UTC+01:00",
+            "abbreviation": "CET",
+            "tzName": "Central European Time"
+          }
+        ]
+      },
+      "state": null,
+      "district": "gfd",
+      "pinCode": "6289",
+      "donationAmount": "100",
+      "message": "cyws",
+      "id": 5
+    },
+    {
+      "firstName": "fff",
+      "lastName": "d",
+      "dateOfBirth": "2023-11-09T18:30:00.000Z",
+      "phoneNumber": "dd",
+      "email": "dd",
+      "address": "dd",
+      "country": {
+        "name": "Aland Islands",
+        "isoCode": "AX",
+        "flag": "🇦🇽",
+        "phonecode": "+358-18",
+        "currency": "EUR",
+        "latitude": "60.11666700",
+        "longitude": "19.90000000",
+        "timezones": [
+          {
+            "zoneName": "Europe/Mariehamn",
+            "gmtOffset": 7200,
+            "gmtOffsetName": "UTC+02:00",
+            "abbreviation": "EET",
+            "tzName": "Eastern European Time"
+          }
+        ]
+      },
+      "state": null,
+      "district": "dd",
+      "pinCode": "dd",
+      "donationAmount": "dd",
+      "message": "dd",
+      "id": 6
+    }
+  ]
+}

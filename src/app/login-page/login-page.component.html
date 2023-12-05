@@ -1,0 +1,30 @@
+
+
+
+<div class="formcard">
+  <form [formGroup]="formdata">
+    <mat-card class="example-card">
+        <mat-card-header >
+        <h1 class="header">Login Page</h1>
+        </mat-card-header>
+        
+        
+             <mat-form-field appearance="legacy">
+              <mat-label>User Name</mat-label>
+              <input type="text"  matInput    formControlName="userName" required>
+             </mat-form-field>
+
+             <mat-form-field appearance="legacy">
+              <mat-label>Password </mat-label>
+              <input type="password" matInput   formControlName="password" required>
+             </mat-form-field>
+       
+      
+        <mat-card-actions class="buttonAction">
+          <button [disabled]="!formdata.valid" mat-raised-button class="button" (click)="loginIn(formdata.value)" >Login In </button>
+        </mat-card-actions>
+
+        <h5>Didn't Have an acount?  <a routerLink="/createAccount" >Create Account</a> </h5>
+      </mat-card>
+        </form>
+</div>
